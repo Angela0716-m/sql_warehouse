@@ -1,21 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Digital Allyship Toolkit Data Warehouse</title>
-<style>
-body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;margin:40px;background:#fafafa;color:#222}
-h1,h2,h3{color:#2c3e50}
-code,pre{background:#f4f4f4;padding:6px;border-radius:6px}
-table{border-collapse:collapse;width:100%;margin:20px 0}
-th,td{border:1px solid #ddd;padding:10px;text-align:left}
-th{background:#2c3e50;color:white}
-section{margin-bottom:40px}
-</style>
-</head>
-<body>
-
 <h1>Digital Allyship Toolkit – Data Warehouse & Analytics Project</h1>
 <p>This project builds a complete end-to-end analytics platform for a learning application designed to help men respond safely and confidently when women disclose distress or gender-based violence.</p>
 <p>The goal of this repository is to demonstrate how educational product data becomes measurable behavioral insight — from raw user activity to impact dashboards.</p>
