@@ -1,6 +1,27 @@
 <h1>Digital Allyship Toolkit – Data Warehouse & Analytics Project</h1>
-<p>This project builds a complete end-to-end analytics platform for a learning application designed to help men respond safely and confidently when women disclose distress or gender-based violence.</p>
-<p>The goal of this repository is to demonstrate how educational product data becomes measurable behavioral insight — from raw user activity to impact dashboards.</p>
+Project Overview
+
+Project Name: Digital Allyship Analytics Warehouse
+Project Team: Lumera (Team 39)
+Objective: Develop a modern data warehouse using SQL Server to consolidate platform usage, learning effectiveness, and user engagement data for analytical reporting and informed decision-making.
+
+1. Business Context & Objectives
+
+The Digital Allyship Toolkit platform collects valuable data on user engagement, learning progress, and behavioral outcomes. A data warehouse is needed to:
+
+Track user progression through learning modules
+Measure knowledge improvement and confidence growth
+Analyze engagement patterns and retention rates
+Support strategic decisions for content improvement
+Demonstrate impact to stakeholders and funding partners
+Key Business Questions:
+
+Which modules have the highest completion rates?
+What is the correlation between scenario-based learning and confidence growth?
+Which user segments show the highest engagement?
+How effective are different content formats (video vs. text)?
+What factors predict successful certification completion?
+
 
 <section>
 <h2>Data Architecture</h2>
@@ -43,6 +64,26 @@
 </section>
 
 <section>
+  ## 📖 Project Overview
+
+This project involves:
+
+1. **Data Architecture**: Designing a Modern Data Warehouse Using Medallion Architecture **Bronze**, **Silver**, and **Gold** layers.
+2. **ETL Pipelines**: Extracting, transforming, and loading data from source systems into the warehouse.
+3. **Data Modeling**: Developing fact and dimension tables optimized for analytical queries.
+4. **Analytics & Reporting**: Creating SQL-based reports and dashboards for actionable insights.
+
+🎯 This repository is an excellent resource for professionals and students looking to showcase expertise in:
+- SQL Development
+- Data Architect
+- Data Engineering  
+- ETL Pipeline Developer  
+- Data Modeling  
+- Data Analytics
+</section>
+
+<section>
+
 <h2>Measured Impact Metrics</h2>
 <ul>
 <li>Module Completion Rate</li>
