@@ -1,0 +1,80 @@
+/*
+===============================================================================
+ Create Bronze Tables
+===============================================================================
+Script Purpose:
+    This script creates tables in the 'bronze' schema, dropping existing tables 
+    if they already exist.
+	  Run this script to re-define the DDL structure of 'bronze' Tables
+===============================================================================
+*/
+
+/* =====================================================
+   BRONZE LAYER TABLES
+   Digital Allyship Toolkit – Raw Data
+   ===================================================== */
+
+-- USERS
+CREATE TABLE bronze.lms_users (
+    user_id VARCHAR PRIMARY KEY,
+    first_name VARCHAR,
+    last_name VARCHAR,
+    email VARCHAR,
+    department VARCHAR,
+    role VARCHAR,
+    created_at TIMESTAMP,
+    updated_at TIMESTAMP
+);
+
+-- COURSES
+CREATE TABLE bronze.lms_courses (
+    course_id VARCHAR PRIMARY KEY,
+    course_name VARCHAR,
+    category VARCHAR,
+    created_at TIMESTAMP
+);
+
+-- MODULES
+CREATE TABLE bronze.lms_modules (
+    module_id VARCHAR PRIMARY KEY,
+    course_id VARCHAR REFERENCES bronze.lms_courses(course_id),
+    module_name VARCHAR,
+    sequence_no INT
+);
+
+-- LESSON ACTIVITY
+CREATE TABLE bronze.lms_lesson_activity (
+    activity_id VARCHAR PRIMARY KEY,
+    user_id VARCHAR REFERENCES bronze.lms_users(user_id),
+    module_id VARCHAR REFERENCES bronze.lms_modules(module_id),
+    status VARCHAR,
+    progress_percent NUMERIC(5,2),
+    event_time TIMESTAMP
+);
+
+-- QUIZ ATTEMPTS
+CREATE TABLE bronze.lms_quiz_attempts (
+    attempt_id VARCHAR PRIMARY KEY,
+    user_id VARCHAR REFERENCES bronze.lms_users(user_id),
+    module_id VARCHAR REFERENCES bronze.lms_modules(module_id),
+    score NUMERIC(5,2),
+    attempt_date TIMESTAMP
+);
+
+-- PRE ASSESSMENT
+CREATE TABLE bronze.survey_pre_assessment (
+    response_id VARCHAR PRIMARY KEY,
+    user_email VARCHAR,
+    confidence_level INT,
+    awareness_score NUMERIC(5,2),
+    submission_date TIMESTAMP
+);
+
+-- POST ASSESSMENT
+CREATE TABLE bronze.survey_post_assessment (
+    response_id VARCHAR PRIMARY KEY,
+    user_email VARCHAR,
+    confidence_level INT,
+    awareness_score NUMERIC(5,2),
+    submission_date TIMESTAMP
+);
