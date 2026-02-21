@@ -1,0 +1,16 @@
+module_id,course_id,module_name,sequence_no
+M001,C001,What is Gender-Based Violence,1
+M002,C001,Recognizing Signs of Abuse,2
+M003,C001,Myths vs Facts About GBV,3
+M004,C002,The Art of Active Listening,1
+M005,C002,Body Language and Non-Verbal Cues,2
+M006,C002,Asking the Right Questions,3
+M007,C003,How to Create a Safe Space,1
+M008,C003,Words That Help vs Words That Harm,2
+M009,C003,Responding to Disclosure Calmly,3
+M010,C004,Knowing Your Limits as an Ally,1
+M011,C004,Understanding Professional Support Services,2
+M012,C004,How to Make a Safe Referral,3
+M013,C005,Emotional Support Without Overstepping,1
+M014,C005,Long-Term Allyship and Consistency,2
+M015,C005,Taking Care of Yourself as a Supporter,3
